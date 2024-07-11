@@ -4,9 +4,7 @@ import { FormEvent, useState } from 'react';
 export function App() {
   const [isGuestsInputOpen, setIsGuestInputOpen] = useState(false)
   const [isGuestsModalOpen, setIsGuestsModalOpen] = useState(false)
-  const [emailsToInvite, setEmailsToInvite] = useState([
-    'meduardo.valentim@gmail.com'
-  ])
+  const [emailsToInvite, setEmailsToInvite] = useState<string[]>([]);
 
   function openGuestsInput() {
     setIsGuestInputOpen(true)
